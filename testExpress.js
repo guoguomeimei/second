@@ -1,13 +1,15 @@
 const express=require('express')
 const app=express()
 const ejs =require('ejs')
+///hhiohioijoi
 const cal=require('./testModule.js')
 app.use('/',express.static('public'))
 app.use('/',express.static('private'))
 app.use('/',express.static('href'))
+
 app.use('/href2',express.static('html2'))
 app.use(express.json()) 
-   
+
 app.use(express.urlencoded({extended:false}))
 // const port =3000
 var dataA=0.0;
